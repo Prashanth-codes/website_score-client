@@ -21,7 +21,7 @@ const ScorePage = () => {
         setLoading(true);
         setError('');
         try {
-            const response = await axios.post('http://localhost:8000/get-url', { url });
+            const response = await axios.post('https://website-score-server.onrender.com/get-url', { url });
             setScores(response.data);
             setUrl('')
         } catch (err) {
