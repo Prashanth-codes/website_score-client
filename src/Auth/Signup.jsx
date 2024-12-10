@@ -25,7 +25,7 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:8000/create-account', {
+      const response = await axios.post('https://website-score-server.onrender.com/create-account', {
         fullName,
         email,
         password,
